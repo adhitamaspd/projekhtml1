@@ -44,7 +44,7 @@
     <!-- Ini List -->
     <!-- List tidak urut -->
     <h4>Daftar Tidak Urut</h4>
-    <ul style="list-style-type: square">
+    <ul style="list-style-type: disc/square/circle/none;">
         <li>ayam</li>
         <li>itik</li>
         <li>bebek</li>
@@ -52,7 +52,7 @@
 
     <!-- List urut -->
     <h4>Daftar Urut</h4>
-    <ol type="A">
+    <ol type="a">
         <li>motor</li>
         <li>mobil</li>
         <li>truk</li>
@@ -101,11 +101,11 @@
 
     <table border="1">
         <tr>
-            <td colspan="3" style="background-color: aqua;">1,1</td>
-            <td rowspan="3">1,4</td>
+            <td colspan="3" style="background-color: rgb(255, 238, 0);">1,1</td>
+            <td rowspan="3" style="background-color: rgb(0, 221, 255);">1,4</td>
         </tr>
         <tr>
-            <td rowspan="3" style="background-color: rgb(75, 234, 97);">2,1</td>
+            <td rowspan="3" style="background-color: rgb(30, 255, 0);">2,1</td>
             <td>2,2</td>
             <td>2,3</td>
         </tr>
@@ -114,8 +114,65 @@
             <td>3,3</td>
         </tr>
         <tr>
-            <td colspan="3">4,2</td>
+            <td colspan="3" style="background-color: rgba(244, 159, 75, 0.924);">4,2</td>
         </tr>
-    </table>
+    </table><br>
+
+    <h3>Formulir Pendaftaran</h3>
+    <!-- <form action="">
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama"><br>
+        <label for="password">Password :</label>
+        <input type="password" id="password"><br>
+        <label for="email">Email</label>
+        <input type="email" id="email"><br>
+        <label for="">Jenis Kelamin :</label>
+        <input type="radio" id="laki-laki" name="jnskl">
+        <label for="laki-laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jnskl">
+        <label for="perempuan">Perempuan</label><br>
+        <label for="tanggal">Tanggal lahir :</label>
+        <input type="date" id="tanggal"><br>
+        <label for="">Hobi :</label>
+        <input type="checkbox" id="menggambar">
+        <label for="menggambar">Menggambar</label>
+        <input type="checkbox" id="melukis">
+        <label for="melukis">Melukis</label>
+        <input type="checkbox" id="menari">
+        <label for="menari">Menari</label><br>
+        <label for="pekerjaan">Pekerjaan :</label>
+        <select name="" id="pekerjaan">
+            <option value="">Belum bekerja</option>
+            <option value="">PNS</option>
+            <option value="">Wiraswasta</option>
+        </select><br>
+        <input type="reset" value="Hapus">
+        <input type="submit" value="Kirim">
+    </form> -->
+
+    <form action="">
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" required><br>
+        <label for="password">Password :</label>
+        <input type="password" id="password" required><br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" required><br>
+        <label for="">Tanggal lahir :</label>
+        <input type="date" required><br>
+        <label for="">Jenis Kelamin :</label>
+        <input type="radio" id="laki" name="jeniskl">
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jeniskl">
+        <label for="perempuan">Perempuan</label><br>
+        <label for="">Hobi :</label>
+        <input type="checkbox" id="masak">
+        <label for="masak">Memasak</label>
+        <input type="checkbox" id="mancing">
+        <label for="mancing">Memancing</label>
+        <input type="checkbox" id="hias">
+        <label for="hias">Menghias</label><br>
+        <input type="reset" value="Hapus">
+        <input type="submit" value="Kirim">
+    </form>
 
 </html>
